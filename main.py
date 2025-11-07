@@ -260,12 +260,10 @@ def print_statistics():
 def main():
     log.info('Hello world! Using the competition config "%s"...' % competition.display_name)
 
-    # Fix child watcher not having a loop attached
-    # https://stackoverflow.com/a/44698923
+    # Setup event loop for asyncio subprocess management
     assert threading.current_thread() is threading.main_thread()
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    asyncio.get_child_watcher()
 
     competition.init_submitter()
 

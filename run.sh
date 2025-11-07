@@ -1,0 +1,1 @@
+docker run -v ./scripts:/app/scripts ctf-flag-submitter saarctf
