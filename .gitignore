@@ -2,5 +2,5 @@ __pycache__
 .vscode
 .idea
 
-scripts/*
-!scripts/.gitkeep
+scripts/scripts/*
+!scripts/scripts/.gitkeep

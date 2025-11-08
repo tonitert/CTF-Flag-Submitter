@@ -188,7 +188,7 @@ async def exploit_runner(loop):
             log.info('Running in dry-run mode, skipping running exploits...')
         else:
             log.info('Running exploits...')
-            for script in glob.glob('./scripts/*'):
+            for script in glob.glob('./scripts/scripts/*'):
                 if not script in tasks_pool:
                     tasks_pool[script] = {}
 
